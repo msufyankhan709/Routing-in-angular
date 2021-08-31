@@ -4,6 +4,8 @@ import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './users/login/login.component';
+import { SignupComponent } from './users/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -18,10 +20,19 @@ const routes: Routes = [
     path:"about",
     component:AboutComponent
   },
+ 
+  {
+   path:"login",
+   component:LoginComponent
+  },
+  {
+    path:"signup",
+    component:SignupComponent
+  },
   {
     path:"**",
     component:PageNotFoundComponent
-  }
+  },
 ];
 
 @NgModule({

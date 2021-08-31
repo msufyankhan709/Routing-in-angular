@@ -7,7 +7,7 @@ import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AboutComponent } from './about/about.component';
-
+import { UsersModule } from './users/users.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,9 +15,11 @@ import { AboutComponent } from './about/about.component';
     AdminComponent,
     PageNotFoundComponent,
     AboutComponent,
+    
   ],
   imports: [
     BrowserModule,
+    UsersModule,
     AppRoutingModule
   ],
   providers: [],
